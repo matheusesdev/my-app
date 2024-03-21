@@ -8,6 +8,7 @@ export default function Home() {
       <Navbar />
       <div className="container mt-24 mx-auto px-12 pxy-4">
         <HeroSection />
+        <AboutSection />
       </div>
     </main>
   );
