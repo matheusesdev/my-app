@@ -8,7 +8,7 @@ const HeroSection = () => {
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-7 place-self-center text-center sm:text-left">
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-bold">
+          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-7xl lg:leading-normal font-bold ">
             <span className="text-red-900 opacity-1 bg-clip-text bg-gradient-to-r">
               Hello, I&apos;m{""}
             </span>
@@ -17,12 +17,12 @@ const HeroSection = () => {
               sequence={[
                 // Same substring at the start will only be typed out once, initially
                 "Matheus",
-                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                4000, // wait 1s before replacing "Mice" with "Hamsters"
                 "Web Developer",
-                1000,
+                4000,
               ]}
               wrapper="span"
-              speed={60}
+              speed={10}
               repeat={Infinity}
             />
           </h1>
@@ -30,14 +30,14 @@ const HeroSection = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">
+            <button className="transition ease-in-out bg-black hover:-translate-y-1 hover:scale-110 delay-150 px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-red-900  to-black hover:bg-red-900 text-white">
               Hire Me
             </button>
             <Link
               href="/"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-black-800 text-white mt-3"
             >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+              <span className="px-6 py-3 w-full sm:w-fit mr-4 transition ease-in-out delay-150 bg-black hover:-translate-y-1 hover:scale-110 from-red-900 to-black  hover:bg-red-900 duration-300 block  rounded-full">
                 Download CV
               </span>
             </Link>
